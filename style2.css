@@ -664,103 +664,65 @@ li span {
   background-color: var(--primary-color);
   color:var(--extra-light);
 }
-@media (min-width: 540px) {
-    .header-container {
-        grid-template-columns: 1fr 1fr;
-        padding-top: 8rem;
-        align-items: center;
-        justify-items: start;
-    }
-    .header-container .section-header {
-        text-align: left;
-    }
-    .hotel-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .steps-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .restaurant-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media (max-width: 576px) {
+  nav {
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .header-container {
+    grid-template-columns: 1fr;
+    padding-top: 4rem;
+    text-align: center;
+  }
+
+  .header-container h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+  }
+
+  .header-btns {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hotel-grid,
+  .steps-grid,
+  .restaurant-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
 }
+@media (min-width: 577px) and (max-width: 992px) {
+  .header-container {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 6rem;
+  }
 
-/* للتابلت/الموبايل العريض استخدمي max-width بدل min-width */
-@media (max-width: 786px) {
-    nav{
-        padding: 0.5rem 0;
-        position: sticky;
-        background-color: var(--primary-color);
-    }
-    .nav-header{
-        background-color: var(--primary-color);
-        justify-content: flex-start;
-        padding-left:0.5rem;
-        max-width: var(--max-width);
-        top: 0;
-        margin: 0 auto;
-    }
-    .nav-logo a{
-        text-decoration: none;
-        font-size: 1.75rem;
-        color: var(--text-dark);
-    }
-    a{
-        text-decoration: none;
-    }
-    .nav-links{
-        width: fit-content;
-        padding: 0;
-        flex-direction: row;
-        background-color: transparent;
-        transform: none !important;
-        gap: 2rem;
-    }
-    #nav-links li{
-        list-style: none;
-    }
-    .nav-links a{
-        text-decoration: none;
-        color: var(--text-dark);
-    }
-    .nav-links a:hover{
-        color: var(--extra-light);
-    }
-    header{
-        padding-top: 0;
-    }
-    .header-container{
-        grid-template-columns: 4fr 2fr; 
-        padding-top: 5rem;
-    }
-    .header-container h1{
-        text-align: left;
-        font-size: 6rem;
-        line-height: 6.5rem;
-        margin-top: 5rem;
-    }
-    .header-content{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    .header-btns{
-        justify-content: flex-start;
-    }
-    .hotel-grid{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .steps-grid{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .restaurant-grid{
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .contact-grid{
-        grid-template-columns: 1fr 2fr;
-    }
+  .header-container h1 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+    text-align: left;
+  }
+
+  .hotel-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .restaurant-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1.5fr;
+  }
 }
-
-
