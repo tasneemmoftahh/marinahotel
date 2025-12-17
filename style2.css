@@ -664,65 +664,50 @@ li span {
   background-color: var(--primary-color);
   color:var(--extra-light);
 }
-
-@media (min-width: 540px){
-    header{
-        min-height: 80vh;
-        background-position: center center;
-        background-size: cover;
-    }
-    .header-container{
+@media (min-width: 540px) {
+    .header-container {
         grid-template-columns: 1fr 1fr;
         padding-top: 8rem;
         align-items: center;
-        text-align: center;
         justify-items: start;
     }
-    .header-container h1{
-        font-size: 2rem;
-         line-height: 2.5rem;
-    }
-
-    .header-container .section-header{
+    .header-container .section-header {
         text-align: left;
     }
-     .header-btns {
-        justify-content: center; 
-        flex-direction: column; 
-        gap: 0.5rem;}
-    .hotel-grid{
+    .hotel-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .steps-grid{
+    .steps-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .restaurant-grid{
+    .restaurant-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (min-width: 786px){
-    nav{
+
+@media (min-width: 786px) {
+    nav {
         padding: 0.5rem 0;
         position: sticky;
         background-color: var(--primary-color);
     }
-    .nav-header{
+    .nav-header {
         background-color: var(--primary-color);
         justify-content: flex-start;
-        padding-left:0.5rem ;
+        padding-left: 0.5rem;
         max-width: var(--max-width);
         top: 0;
         margin: 0 auto;
     }
-    .nav-logo a{
+    .nav-logo a {
         text-decoration: none;
         font-size: 1.75rem;
         color: var(--text-dark);
     }
-    a{
+    a {
         text-decoration: none;
     }
-    .nav-links{
+    .nav-links {
         width: fit-content;
         padding: 0;
         flex-direction: row;
@@ -730,50 +715,52 @@ li span {
         transform: none !important;
         gap: 2rem;
     }
-    #nav-links li{
+    #nav-links li {
         list-style: none;
     }
-    .nav-links a{
+    .nav-links a {
         text-decoration: none;
         color: var(--text-dark);
     }
-    .nav-links a:hover{
+    .nav-links a:hover {
         color: var(--extra-light);
     }
     
-    header{
+    header {
         padding-top: 0;
     }
-    .header-container{
-        grid-template-columns: 4fr 2fr; 
+    .header-container {
+        grid-template-columns: 4fr 2fr;
         padding-top: 5rem;
     }
-    .header-container h1{
+    .header-container h1 {
         text-align: left;
         font-size: 6rem;
         line-height: 6.5rem;
         margin-top: 5rem;
     }
-    .header-content{
+    .header-content {
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
     }
-    .header-btns{
+    
+    .header-btns {
         justify-content: flex-start;
     }
-    .hotel-grid{
+    .hotel-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    .steps-grid{
+    .steps-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    .restaurant-grid{
+    .restaurant-grid {
         grid-template-columns: repeat(4, 1fr);
     }
-    .contact-grid{
+    .contact-grid {
         grid-template-columns: 1fr 2fr;
     }
 }
+
